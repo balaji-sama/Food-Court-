@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+#one {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.7),
+      rgba(128, 128, 128, 0.3)
+    ),
+    url("./assets/images/heroBackgroun.png") center/cover no-repeat;
+}
+
+#one nav {
+  height: 70px;
+  width: 100%;
+  background: #e9e4e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#nav_one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav_one img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+#nav_one h1 a {
+  font-size: 1.4rem;
+  color: black;
+}
+
+#nav_two {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav_two a {
+  font-weight: 600;
+  color: #6d4c41;
+}
+
+#nav_two a.active {
+  color: #ea5a0b;
+}
+
+#nav_two button {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 25px;
+  background: linear-gradient(to right, #fd8901, #f36f06, #ea5a0b);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  min-height: 100vh;
+  padding: 0 5%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+#tagline {
+  color: #ff8c00;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+header h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: white;
+}
+
+header h1 span {
+  color: #fd8901;
+}
+
+#description {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: #f0f0f0;
+  max-width: 600px;
+}
+
+#btn_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#btn_group button {
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#explore_btn {
+  background: linear-gradient(to right, #fd8901, #f36f06, #ea5a0b);
+  color: white;
+  border: none;
+}
+
+#order_btn {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+#two {
+  padding: 80px 5%;
+  background: linear-gradient(135deg, hsl(30, 100%, 95%), hsl(33, 80%, 88%));
+}
+
+#menu1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#menu1 h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+#menu2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.menu2_cards {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.menu2_cards img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu2_cards button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 30px;
+  border: none;
+  padding: 3px 12px;
+  background: #ea5a0b;
+  color: white;
+  font-weight: 600;
+}
+
+.menu2_cards h2,
+.menu2_cards p {
+  padding: 0 15px;
+}
+
+#menu3 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+#menu3 button {
+  border-radius: 30px;
+  padding: 12px 30px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(to right, #fd8901, #f36f06, #ea5a0b);
+  color: white;
+}
+
+#three {
+  padding: 80px 5%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+#about_one,
+#about_two {
+  flex: 1 1 400px;
+}
+
+#about_one h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.about_features {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.features_one div {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  background: #ff8c0032;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#experience {
+  width: 100%;
+  max-width: 400px;
+  background: #f371064f;
+  border-radius: 30px;
+  padding: 40px;
+  text-align: center;
+}
+
+#experience h1 {
+  font-size: clamp(2rem, 6vw, 4rem);
+  color: #ea5a0b;
+}
+
+#about_soup {
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  font-size: 2.5rem;
+  background: #ea5a0b;
+  padding: 15px;
+  border-radius: 20px;
+}
+
+#four {
+  padding: 60px 5%;
+  background: #32211b;
+  color: white;
+}
+
+#four_one {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid rgba(159, 159, 159, 0.6);
+  padding-bottom: 30px;
+}
+
+#four_one aside {
+  flex: 1 1 250px;
+}
+
+#four_one p,
+#contact_three a {
+  color: #8e8a88;
+}
+
+#four_two {
+  text-align: center;
+  padding-top: 20px;
+  color: #8e8a88;
+}
+
+@media (max-width: 768px) {
+
+  #nav_two {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #e9e4e0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  #nav_two.active {
+    display: flex;
+  }
+
+  #nav_two button {
+    width: 60%;
+  }
+
+  header {
+    text-align: center;
+    align-items: center;
+  }
+
+  #btn_group {
+    justify-content: center;
+  }
+
+}

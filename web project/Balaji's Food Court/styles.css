@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.498)),
+    url("./assets/images/heroBackgroun.png");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+#card {
+  width: 100%;
+  max-width: 500px;
+  background: #fffaf5;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+#card_one {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#card_one > img {
+  width: clamp(90px, 25vw, 140px);
+  height: auto;
+  border-radius: 50%;
+}
+
+#card_one > p {
+  margin-top: 0.5rem;
+  color: #6d4c41;
+  font-weight: 500;
+}
+
+#card_two {
+  margin-bottom: 20px;
+}
+
+#btn_container {
+  width: 100%;
+  background-color: #ffe0b2;
+  border-radius: 100px;
+  display: flex;
+  padding: 5px;
+}
+
+#btn_container > button {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 100px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login_btn.active {
+  background-color: #d84315;
+  color: white;
+}
+
+.register_btn {
+  background-color: transparent;
+  color: #bf360c;
+}
+
+#btn_container > button:hover {
+  transform: scale(1.05);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > h1 {
+  color: #bf360c;
+  font-size: clamp(1.5rem, 5vw, 2.3rem);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.form > p {
+  color: #6d4c41;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+#login_form,
+#register_form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#login_form > input,
+#register_form > input {
+  width: 100%;
+  min-height: 45px;
+  border-radius: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.login_inputs {
+  padding-left: 0.75rem;
+  border: 1px solid #d7ccc8;
+}
+
+.login_inputs:focus {
+  outline: none;
+  border: 2px solid #ff9800;
+}
+
+#sign_up_btn,
+#create_acc_btn {
+  background: linear-gradient(90deg, #ff9800, #f57c00);
+  border: none;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sign_up_btn:hover,
+#create_acc_btn:hover {
+  background: linear-gradient(90deg, #f57c00, #e65100);
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #card {
+    padding: 20px;
+  }
+
+  #card_one > img {
+    width: 80px;
+  }
+
+  .form > h1 {
+    font-size: 1.4rem;
+  }
+}

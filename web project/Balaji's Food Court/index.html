@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balaji's Food Court </title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="./assets/images/LogoTitle.jpeg " type="image/x-icon" />
+  </head>
+  <body>
+    <section id="card">
+      <aside id="card_one">
+        <img src="./assets/images/LogoTitle.jpeg" alt="logo" />
+        <p>Hot • Spicy • Home-Style Meals</p>
+      </aside>
+
+      <aside id="card_two">
+        <div id="btn_container">
+          <button class="login_btn active">Login</button>
+          <button class="register_btn">Register</button>
+        </div>
+      </aside>
+
+      <aside id="card_three" class="form active">
+        <h1>Welcome Back! 🍛</h1>
+        <p>Sign in to order delicious homemade curries</p>
+        <form id="login_form">
+          <input type="email" placeholder="Email Address" class="login_inputs" id="loginEmail">
+          <input type="password" placeholder="Password" class="login_inputs" id="loginPassword">
+          <p id="loginErrorInfo"></p>
+          <input type="submit" value="Sign In" id="sign_up_btn">
+        </form>
+      </aside>
+
+      <aside id="card_four" class="form hidden">
+        <h1>Join Balaji's Food Court </h1>
+        <p>Create your account & enjoy home-style curries</p>
+        <form id="register_form" autocomplete="on">
+          <input type="text" placeholder="Full Name" class="login_inputs" id="regName">
+          <input type="email" placeholder="Email Address" class="login_inputs" id="regEmail">
+          <input type="password" placeholder="Password" class="login_inputs" id="regPassword">
+          <input type="password" placeholder="Confirm Password" class="login_inputs" id="regConfirmPassword">
+          <p id="regErrorInfo"></p>
+          <input type="submit" value="Create Account" id="create_acc_btn" />
+        </form>
+      </aside>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

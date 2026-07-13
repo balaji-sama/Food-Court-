@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, hsl(30, 100%, 95%), hsl(33, 80%, 88%));
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: "Playfair Display", serif;
+}
+
+nav {
+  height: 70px;
+  width: 100%;
+  background-color: #e9e4e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+#nav_one {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#nav_one img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+#nav_one h1 a {
+  font-size: 1.3rem;
+  color: black;
+}
+
+#nav_two {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#nav_two a {
+  font-weight: 600;
+  color: #8e8a88;
+}
+
+#nav_two button {
+  border: none;
+  border-radius: 30px;
+  padding: 8px 25px;
+  background: linear-gradient(to right, #fd8901, #f36f06, #ea5a0b);
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  margin-top: 100px;
+  padding: 40px 5%;
+  text-align: center;
+}
+
+header p {
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #f36f06;
+}
+
+header h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.menu_container {
+  padding: 60px 5%;
+}
+
+.menu_container_title {
+  margin-bottom: 40px;
+  padding-bottom: 10px;
+}
+
+.menu_container_title h1 {
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.menu_container_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.item_card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item_card1 img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.item_card2 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.price {
+  font-weight: 600;
+  color: #ea5a0b;
+}
+
+.item_card3 {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.item_card3 button {
+  border-radius: 30px;
+  padding: 8px 25px;
+  border: none;
+  background-color: #ea5a0b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  width: 80%;
+}
+
+.counter_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.minus_btn, .plus_btn {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #fd8901;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.sidebar_container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 350px;
+  background-color: white;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.2);
+}
+
+.sidebar_container.active {
+  transform: translateX(0);
+}
+
+#sidebar1 {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ea5a0b;
+  color: white;
+}
+
+#sidebar1 button {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#sidebar2 {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+#sidebar3 {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+#sidebar3 button {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  background-color: #ea5a0b;
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.item_container {
+  display: flex;
+  gap: 10px;
+  background: white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.item1 img {
+  height: 60px;
+  width: 60px;
+  border-radius: 6px;
+}
+
+.item2 {
+  flex: 1;
+}
+
+.item3 button {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  color: #ea5a0b;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  #nav_two {
+    display: flex;
+    gap: 10px;
+  }
+
+  #nav_two a {
+    display: none;
+  }
+
+  #nav_two button {
+    padding: 6px 18px;
+    font-size: 0.9rem;
+  }
+
+  .sidebar_container {
+    width: 100%;
+  }
+
+  .item_card1 img {
+    height: 250px;
+  }
+
+}
